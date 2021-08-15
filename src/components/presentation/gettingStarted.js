@@ -29,7 +29,7 @@ function GettingStarted(props) {
                     {
                         skinCodes.map((value,index) => {
                             return( <div key={index} className="template-card rounded-border">
-                                  <i className={(value == props.document.skinCd? 'selected fa fa-check' :'hide') } ></i>
+                                  <i className={(value === props.document.skinCd? 'selected fa fa-check' :'hide') } ></i>
                                 <img  className='' src={'/images/' + value + '.svg'}/>
                                 <button type="button" onClick={()=>onChange(value)}  className='btn-select-theme'>USE TEMPLATE</button>
                             </div>);
